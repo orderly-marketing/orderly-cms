@@ -853,6 +853,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     blocks: Attribute.DynamicZone<
       ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
     >;
+    postedTime: Attribute.DateTime;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
