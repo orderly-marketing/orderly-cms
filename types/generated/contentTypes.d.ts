@@ -854,6 +854,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
     >;
     postedTime: Attribute.DateTime;
+    pin: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

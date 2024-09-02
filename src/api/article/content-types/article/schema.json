@@ -56,6 +56,9 @@
     },
     "postedTime": {
       "type": "datetime"
+    },
+    "pin": {
+      "type": "boolean"
     }
   }
 }
