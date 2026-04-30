@@ -10,6 +10,7 @@ module.exports = [
         "https://www.orderly.network",
         "https://dev-v2.orderly.network",
         "https://www.dev.orderly-i.network",
+        "https://exuberant-sparkle-dc686d5c20.strapiapp.com",
       ],
     },
   },
