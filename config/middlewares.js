@@ -3,7 +3,8 @@ module.exports = [
   {
     name: "global::request-domain-logger",
     config: {
-      onlyOnError: true,
+      onlyOnError: false,
+      logLevel: "http",
     },
   },
   "strapi::errors",
