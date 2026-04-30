@@ -33,7 +33,9 @@ module.exports = (config, { strapi }) => {
 
     const msg = `http: ${ctx.method} ${fullUrl} (${durationMs} ms) ${ctx.status}`;
     const logger = strapi.log;
-    const fn = typeof logger?.[logLevel] === "function" ? logger[logLevel] : logger.info;
+    const fn =
+      typeof logger?.[logLevel] === "function" ? logger[logLevel] : logger.info;
     fn(msg);
   };
 };
+
