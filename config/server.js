@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
   },
   transfer: {
     remote: {
-      assetIdleTimeoutMs: 300000, // 5分钟，默认为 300000ms
+      assetIdleTimeoutMs: 600000,
     },
   },
 });
