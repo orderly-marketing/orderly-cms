@@ -12,4 +12,7 @@ module.exports = ({ env }) => ({
       assetIdleTimeoutMs: 600000,
     },
   },
+  cron: {
+    enabled: false,
+  },
 });
