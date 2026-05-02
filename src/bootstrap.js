@@ -269,6 +269,13 @@ async function main() {
 }
 
 
-module.exports = async () => {
+module.exports = async ({ strapi }) => {
+  strapi.cron.remove('uploadWeekly');
+  strapi.cron.remove('aiMetadataJobsCleanup');
+
+  if (process.env.SKIP_BOOTSTRAP_SEED === 'true') {
+    return;
+  }
+
   await seedExampleApp();
 };
